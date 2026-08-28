@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cà phê Buôn Ma Thuột - ĐẮKLẮK</title>
+    <meta
+      name="description"
+      content="Chi tiết sản phẩm Cà phê Buôn Ma Thuột, rang xay nguyên chất, đậm đà hương vị Tây Nguyên."
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="logo">
+        <img src="images/logo.png" alt="Logo Đặc sản Tây Nguyên" />
+        <span>ĐẶC SẢN TÂY NGUYÊN</span>
+      </div>
+      <p class="slogan">Hàng giả trả tiền</p>
+
+      <nav>
+        <ul>
+          <li><a href="index.html">Trang chủ</a></li>
+          <li><a href="products.html">Sản phẩm</a></li>
+          <li><a href="product-detail.html">Chi tiết sản phẩm</a></li>
+          <li><a href="contact.html">Liên hệ</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Nội dung chính -->
+    <main>
+      <!-- Phần 1: Chi tiết sản phẩm chính -->
+      <section class="product-detail-section">
+        <div class="product-image">
+          <!-- Hình ảnh sản phẩm có thuộc tính alt -->
+          <img
+            src="images/ca-phe-buon-ma-thuot.jpg"
+            alt="Hình ảnh chi tiết Cà phê Buôn Ma Thuột"
+          />
+        </div>
+
+        <div class="product-info">
+          <!-- Tiêu đề sản phẩm dùng thẻ h1 -->
+          <h1>Cà phê Buôn Ma Thuột</h1>
+
+          <!-- Thông tin giá bán -->
+          <p class="price">250.000 VNĐ</p>
+
+          <!-- Mô tả chi tiết sản phẩm -->
+          <p class="description">
+            Được chọn lọc từ những hạt cà phê Robusta chín mọng trên vùng đất đỏ
+            bazan Đắk Lắk. Cà phê rang xay thủ công theo phương pháp truyền
+            thống, mang lại hương vị đậm đà, thơm nồng nàn, đánh thức mọi giác
+            quan của bạn mỗi buổi sáng.
+          </p>
+
+          <!-- Danh sách thông tin sản phẩm bắt buộc dùng thẻ <dl> -->
+          <dl class="product-specs">
+            <dt>Xuất xứ:</dt>
+            <dd>Buôn Ma Thuột, Đắk Lắk</dd>
+
+            <dt>Khối lượng:</dt>
+            <dd>500g</dd>
+
+            <dt>Hạn sử dụng:</dt>
+            <dd>12 tháng kể từ ngày sản xuất</dd>
+
+            <dt>Cách bảo quản:</dt>
+            <dd>Bảo quản nơi khô ráo, thoáng mát, đậy kín sau khi sử dụng.</dd>
+          </dl>
+
+          <!-- Nhóm nút hành động -->
+          <div class="action-buttons">
+            <button type="button" class="btn-add-cart">
+              Thêm vào giỏ hàng
+            </button>
+            <!-- Liên hệ tư vấn dùng thẻ a để chuyển hướng sang trang contact -->
+            <a href="contact.html" class="btn-contact">Liên hệ tư vấn</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Phần 2: Khu vực sản phẩm liên quan -->
+      <section class="related-products">
+        <h2>Sản phẩm liên quan</h2>
+        <div class="product-list">
+          <!-- Dùng lại thẻ article cho sản phẩm như yêu cầu -->
+          <article class="product-card">
+            <img src="images/mat-ong-rung-tay-nguyen.jpg" alt="Mật ong rừng" />
+            <h3>Mật ong</h3>
+            <p class="price">350.000 VNĐ</p>
+            <a href="product-detail.html">Xem chi tiết</a>
+          </article>
+
+          <article class="product-card">
+            <img src="images/mac-ca-tay-nguyen.jpg" alt="Mắc Ca Tây Nguyên" />
+            <h3>Mắc Ca</h3>
+            <p class="price">280.000 VNĐ</p>
+            <a href="product-detail.html">Xem chi tiết</a>
+          </article>
+
+          <article class="product-card">
+            <img src="images/tieu-dak-nong.jpg" alt="Tiêu Đắk Nông" />
+            <h3>Tiêu Đắk Nông</h3>
+            <p class="price">150.000 VNĐ</p>
+            <a href="product-detail.html">Xem chi tiết</a>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer đồng nhất -->
+    <footer>
+      <div class="contact-info">
+        <h3>THÔNG TIN LIÊN HỆ</h3>
+        <p>Địa chỉ: 567 Lê Duẩn, Buôn Ma Thuột, ĐẮK LẮK</p>
+        <p>Điện thoại: 0935350822</p>
+      </div>
+      <p class="copyright">Copyright &copy; by HTH</p>
+    </footer>
+  </body>
+</html>

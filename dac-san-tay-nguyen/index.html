@@ -1,91 +1,114 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ĐẮKLẮK</title>
-    <link rel="stylesheet" href="style.css"
-</head>
-<body>
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ĐẮKLẮK - Đặc sản Tây Nguyên</title>
+    <meta
+      name="description"
+      content="Khám phá đặc sản Tây Nguyên, mùi hương nồng nàn, tinh túy và hoang sơ."
+    />
+    <!-- Đã sửa: Thêm dấu đóng thẻ và trỏ đúng vào thư mục css/ theo cấu trúc -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
     <header>
-        <img src="./images/" alt="Logo">
-        <h1> ĐẶC SẢN TÂY NGUYÊN </h1>
-            <h2>Hàng giả trả tiền</h2>
-        <nav>
-            <li><a href="index.html">trang chủ</a></li>
-            <li><a href="product">sản phẩm</a></li>
-            <li><a href="product-detail.html">chi tiết sản phẩm</a></li>
-            <li><a href="contact.html">liên hệ</a></li>
-        </nav>
+      <div class="logo">
+        <img src="images/logo.png" alt="Logo Đặc sản Tây Nguyên" />
+        <h1>ĐẶC SẢN TÂY NGUYÊN</h1>
+      </div>
+      <!-- Đã sửa: Không dùng thẻ h2 nhảy cấp bừa bãi, chuyển thành class slogan -->
+      <p class="slogan">Hàng giả trả tiền</p>
+
+      <nav>
+        <!-- Đã sửa: Thêm thẻ ul bao bọc các thẻ li -->
+        <ul>
+          <li><a href="index.html">Trang chủ</a></li>
+          <li><a href="products.html">Sản phẩm</a></li>
+          <!-- Đã sửa: link đúng tên file -->
+          <li><a href="product-detail.html">Chi tiết sản phẩm</a></li>
+          <li><a href="contact.html">Liên hệ</a></li>
+        </ul>
+      </nav>
     </header>
+
+    <!-- Đã sửa: Xóa 1 thẻ <main> bị dư -->
     <main>
-        <main>
-    <!-- Banner -->
-    <section class="banner">
+      <!-- 1. Banner -->
+      <section class="banner">
         <div class="banner-content">
-            <h1>KHÁM PHÁ ĐẶC SẢN TÂY NGUYÊN</h1>
-            <p>Mùi hương nồng nàn, tinh túy và hoang sơ của đất trời lộng gió và ngôi nhà của bạn.</p>
-            <a href="#featured-products" class="btn">Mua ngay</a>
+          <h2>KHÁM PHÁ ĐẶC SẢN TÂY NGUYÊN</h2>
+          <p>
+            Mùi hương nồng nàn, tinh túy và hoang sơ của đất trời lộng gió và
+            ngôi nhà của bạn.
+          </p>
+          <!-- Đã sửa: trỏ nút Mua ngay về đúng trang danh sách sản phẩm -->
+          <a href="products.html" class="btn">Mua ngay</a>
         </div>
-    </section>
+      </section>
 
-    <!-- Sản phẩm nổi bật -->
-    <section id="featured-products" class="featured-products">
+      <!-- 2. Sản phẩm nổi bật -->
+      <section id="featured-products" class="featured-products">
         <h2>Sản phẩm nổi bật</h2>
-
         <div class="product-list">
-            <div class="product-card">
-                <img src="images/" alt="Mắc Ca">
-                <h3>Mắc Ca</h3>
-            </div>
+          <article class="product-card">
+            <img src="images/mac-ca-tay-nguyen.jpg" alt="Mắc Ca Tây Nguyên" />
+            <h3>Mắc Ca</h3>
+          </article>
 
-            <div class="product-card">
-                <img src="images/" alt="Mật ong">
-                <h3>Mật ong</h3>
-            </div>
+          <article class="product-card">
+            <img src="images/mat-ong-rung-tay-nguyen.jpg" alt="Mật ong rừng" />
+            <h3>Mật ong</h3>
+          </article>
 
-            <div class="product-card">
-                <img src="images/" alt="Cà phê">
-                <h3>Cà phê rang xay</h3>
-            </div>
+          <article class="product-card">
+            <img
+              src="images/ca-phe-buon-ma-thuot.jpg"
+              alt="Cà phê Buôn Ma Thuột"
+            />
+            <h3>Cà phê rang xay</h3>
+          </article>
 
-            <div class="product-card">
-                <img src="images/" alt="Tiêu">
-                <h3>Tiêu</h3>
-            </div>
+          <article class="product-card">
+            <img src="images/tieu-dak-nong.jpg" alt="Tiêu Đắk Nông" />
+            <h3>Tiêu</h3>
+          </article>
 
-            <div class="product-card">
-                <img src="images/" alt="Bơ">
-                <h3>Bơ</h3>
-            </div>
+          <article class="product-card">
+            <img src="images/bo-sap-dak-lak.jpg" alt="Bơ sáp Đắk Lắk" />
+            <h3>Bơ</h3>
+          </article>
         </div>
-    </section>
-    <section class="cautruyenvungmien">
+      </section>
+
+      <!-- 3. Câu chuyện vùng miền -->
+      <section class="cautruyenvungmien">
         <h2>Câu chuyện vùng miền</h2>
         <p>
-            Tây Nguyên không chỉ có những cánh rừng bạc ngàn,
-            những ngọn thác hùng vĩ mà còn được thiên nhiên ưu ái ban tạn đất đỏ bazan màu mỡ. 
-            Đây chính là cái nôi nuôi dưỡng nên những hạt cà phê robusta BUôn Ma Thuột đậm đà, 
-            thơm nồng đặc trưng khó đâu sánh bằng.
+          Tây Nguyên không chỉ có những cánh rừng bạc ngàn, những ngọn thác hùng
+          vĩ mà còn được thiên nhiên ưu ái ban tặng đất đỏ bazan màu mỡ. Đây
+          chính là cái nôi nuôi dưỡng nên những hạt cà phê robusta Buôn Ma Thuột
+          đậm đà, thơm nồng đặc trưng khó đâu sánh bằng.
         </p>
-    </section>
-    <section class="camketchatluong">
+      </section>
+
+      <!-- 4. Cam kết chất lượng -->
+      <section class="camketchatluong">
         <h2>Cam kết chất lượng</h2>
         <p>
-            Sản phẩm địa phương, nguồn gốc rõ ràng, chúng tôi đảm bảo mang đến những giá trị tốt nhất
-            từ vùng đất đỏ bazan
+          Sản phẩm địa phương, nguồn gốc rõ ràng, chúng tôi đảm bảo mang đến
+          những giá trị tốt nhất từ vùng đất đỏ bazan.
         </p>
-    </section>
-</main>
-
-
+      </section>
     </main>
-    <footer>
-        <p><b>THÔNG TIN LIÊN HỆ</b></p>
-            <p>Địa chỉ:567 lê duẩn,Buôn Ma Thuột, ĐẮK LẮK</p>
-            <p>Điện thoại: 0935350822</p>
-            <p>Copyright &copy; by HTH</p>
 
+    <footer>
+      <div class="contact-info">
+        <h3>THÔNG TIN LIÊN HỆ</h3>
+        <p>Địa chỉ: 567 Lê Duẩn, Buôn Ma Thuột, ĐẮK LẮK</p>
+        <p>Điện thoại: 0935350822</p>
+      </div>
+      <p class="copyright">Copyright &copy; by HTH</p>
     </footer>
-</body>
+  </body>
 </html>

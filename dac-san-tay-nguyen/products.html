@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sản phẩm - ĐẮKLẮK</title>
+    <meta
+      name="description"
+      content="Danh sách các mặt hàng đặc sản Tây Nguyên chất lượng cao, cam kết hàng giả trả tiền."
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="logo">
+        <img src="images/logo.png" alt="Logo " />
+        <h1>ĐẶC SẢN TÂY NGUYÊN</h1>
+      </div>
+      <p class="slogan">Hàng giả trả tiền</p>
+
+      <nav>
+        <ul>
+          <li><a href="index.html">Trang chủ</a></li>
+          <li><a href="products.html">Sản phẩm</a></li>
+          <li><a href="product-detail.html">Chi tiết sản phẩm</a></li>
+          <li><a href="contact.html">Liên hệ</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="products-layout">
+      <!-- Tiêu đề trang và mô tả ngắn -->
+      <header class="page-header">
+        <h2>DANH SÁCH SẢN PHẨM</h2>
+        <p>
+          Khám phá trọn vẹn hương vị đại ngàn qua các sản phẩm được chọn lọc kỹ
+          càng của chúng tôi.
+        </p>
+      </header>
+
+      <!-- Bộ lọc sản phẩm bằng thẻ aside  -->
+      <aside class="product-filter">
+        <h3>Bộ lọc sản phẩm</h3>
+        <form action="#" method="GET">
+          <fieldset>
+            <legend>Danh mục</legend>
+            <label
+              ><input type="checkbox" name="category" value="coffee" /> Cà
+              phê</label
+            ><br />
+            <label
+              ><input type="checkbox" name="category" value="honey" /> Mật
+              ong</label
+            ><br />
+            <label
+              ><input type="checkbox" name="category" value="nuts" /> Hạt mắc
+              ca</label
+            ><br />
+            <label
+              ><input type="checkbox" name="category" value="spices" /> Tiêu &
+              Gia vị</label
+            ><br />
+            <label
+              ><input type="checkbox" name="category" value="fruits" /> Trái cây
+              (Bơ sáp)</label
+            >
+          </fieldset>
+          <button type="button">Lọc sản phẩm</button>
+        </form>
+      </aside>
+
+      <!-- Danh sách ít nhất 6 sản phẩm dùng thẻ article -->
+      <section class="product-grid">
+        <!-- Sản phẩm 1 -->
+        <article class="product-card">
+          <img src="images/mac-ca-tay-nguyen.jpg" alt="Hạt Mắc Ca Tây Nguyên" />
+          <h3>Mắc Ca</h3>
+          <p>Hạt mắc ca sấy nứt vỏ, béo ngậy, giàu dinh dưỡng.</p>
+          <p class="price">280.000 VNĐ</p>
+          <a href="product-detail.html">Xem chi tiết</a>
+        </article>
+
+        <!-- Sản phẩm 2 -->
+        <article class="product-card">
+          <img src="images/mat-ong-rung-tay-nguyen.jpg" alt="Mật ong rừng" />
+          <h3>Mật ong</h3>
+          <p>Mật ong nguyên chất, thu hoạch tự nhiên từ rừng sâu.</p>
+          <p class="price">350.000 VNĐ</p>
+          <a href="product-detail.html">Xem chi tiết</a>
+        </article>
+
+        <!-- Sản phẩm 3 -->
+        <article class="product-card">
+          <img
+            src="images/ca-phe-buon-ma-thuot.jpg"
+            alt="Cà phê Buôn Ma Thuột"
+          />
+          <h3>Cà phê rang xay</h3>
+          <p>Cà phê robusta đậm đà, thơm nồng đặc trưng.</p>
+          <p class="price">250.000 VNĐ</p>
+          <a href="product-detail.html">Xem chi tiết</a>
+        </article>
+
+        <!-- Sản phẩm 4 -->
+        <article class="product-card">
+          <img src="images/tieu-dak-nong.jpg" alt="Tiêu Đắk Nông" />
+          <h3>Tiêu</h3>
+          <p>Hạt tiêu đen nguyên chất, cay nồng và thơm lâu.</p>
+          <p class="price">150.000 VNĐ</p>
+          <a href="product-detail.html">Xem chi tiết</a>
+        </article>
+
+        <!-- Sản phẩm 5 -->
+        <article class="product-card">
+          <img src="images/bo-sap-dak-lak.jpg" alt="Bơ sáp Đắk Lắk" />
+          <h3>Bơ sáp Đắk Lắk</h3>
+          <p>Bơ sáp dẻo quánh, vị béo tự nhiên, không xơ.</p>
+          <p class="price">80.000 VNĐ</p>
+          <a href="product-detail.html">Xem chi tiết</a>
+        </article>
+
+        <!-- Sản phẩm 6 (Bổ sung để đủ yêu cầu 6 sản phẩm) -->
+        <article class="product-card">
+          <img src="images/thit-gac-bep.jpg" alt="Thịt gác bếp Tây Nguyên" />
+          <h3>Thịt gác bếp</h3>
+          <p>Thịt bò một nắng ướp gia vị đậm đà, chuẩn vị núi rừng.</p>
+          <p class="price">550.000 VNĐ</p>
+          <a href="product-detail.html">Xem chi tiết</a>
+        </article>
+      </section>
+    </main>
+
+    <!-- Footer đồng nhất với trang chủ -->
+    <footer>
+      <div class="contact-info">
+        <h3>THÔNG TIN LIÊN HỆ</h3>
+        <p>Địa chỉ: 567 Lê Duẩn, Buôn Ma Thuột, ĐẮK LẮK</p>
+        <p>Điện thoại: 0935350822</p>
+      </div>
+      <p class="copyright">Copyright &copy; by HTH</p>
+    </footer>
+  </body>
+</html>
