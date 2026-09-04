@@ -14,22 +14,37 @@
   <body>
     <header>
       <div class="logo">
-        <img src="../images/logo.png" alt="Đặc sản Tây Nguyên" />
-        <h1>ĐẶC SẢN TÂY NGUYÊN</h1>
+        <img src="../images/logo.png" alt="Logo Đặc sản Tây Nguyên" />
+        <span>ĐẶC SẢN TÂY NGUYÊN</span>
       </div>
-      <!-- Đã sửa: Không dùng thẻ h2 nhảy cấp bừa bãi, chuyển thành class slogan -->
       <p class="slogan">Hàng giả trả tiền</p>
 
       <nav>
-        <!-- Đã sửa: Thêm thẻ ul bao bọc các thẻ li -->
         <ul>
           <li><a href="index.html">Trang chủ</a></li>
           <li><a href="products.html">Sản phẩm</a></li>
-          <!-- Đã sửa: link đúng tên file -->
           <li><a href="product-detail.html">Chi tiết sản phẩm</a></li>
           <li><a href="contact.html">Liên hệ</a></li>
+          <!-- Giỏ hàng mới thêm -->
+          <li>
+            <a
+              href="contact.html"
+              style="color: var(--color-secondary); font-weight: bold"
+            >
+              🛒 Giỏ hàng (<span id="cart-count">0</span>)
+            </a>
+          </li>
         </ul>
       </nav>
+
+      <!-- Thanh tìm kiếm mới đặt trên Header -->
+      <div class="nav-search">
+        <input
+          type="text"
+          id="search-input"
+          placeholder="Tìm kiếm sản phẩm..."
+        />
+      </div>
     </header>
 
     <!-- Đã sửa: Xóa 1 thẻ <main> bị dư -->
@@ -116,5 +131,6 @@
       </div>
       <p class="copyright">Copyright &copy; by HTH</p>
     </footer>
+    <script src="../js/main.js"></script>
   </body>
 </html>

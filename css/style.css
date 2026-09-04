@@ -421,3 +421,27 @@ footer h3 {
     scroll-behavior: auto !important;
   }
 }
+/* Trang trí thanh tìm kiếm trên Header */
+.nav-search {
+  margin-top: var(--space-md);
+  width: 100%;
+  max-width: 300px; /* Giới hạn độ dài để không bị tràn */
+}
+
+.nav-search input {
+  width: 100%;
+  border-radius: 20px; /* Bo tròn giống Google cho đẹp */
+  padding: 8px 16px;
+  border: 1px solid var(--color-border);
+}
+
+/* Kéo thanh tìm kiếm lên ngang hàng với menu khi ở trên máy tính */
+@media (min-width: 900px) {
+  header {
+    flex-wrap: wrap; /* Cho phép rớt dòng nếu thiếu chỗ */
+  }
+  .nav-search {
+    margin-top: 0;
+    margin-left: auto; /* Tự động đẩy thanh tìm kiếm sang góc phải */
+  }
+}

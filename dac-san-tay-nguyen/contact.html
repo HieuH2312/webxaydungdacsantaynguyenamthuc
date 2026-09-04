@@ -11,10 +11,10 @@
     <link rel="stylesheet" href="../css/style.css" />
   </head>
   <body>
-    <!-- Header đồng nhất -->
+    <!-- Header -->
     <header>
       <div class="logo">
-        <img src="../images/logo.png" alt="Đặc sản Tây Nguyên" />
+        <img src="../images/logo.png" alt="Logo Đặc sản Tây Nguyên" />
         <span>ĐẶC SẢN TÂY NGUYÊN</span>
       </div>
       <p class="slogan">Hàng giả trả tiền</p>
@@ -25,8 +25,26 @@
           <li><a href="products.html">Sản phẩm</a></li>
           <li><a href="product-detail.html">Chi tiết sản phẩm</a></li>
           <li><a href="contact.html">Liên hệ</a></li>
+          <!-- Giỏ hàng mới thêm -->
+          <li>
+            <a
+              href="contact.html"
+              style="color: var(--color-secondary); font-weight: bold"
+            >
+              🛒 Giỏ hàng (<span id="cart-count">0</span>)
+            </a>
+          </li>
         </ul>
       </nav>
+
+      <!-- Thanh tìm kiếm mới đặt trên Header -->
+      <div class="nav-search">
+        <input
+          type="text"
+          id="search-input"
+          placeholder="Tìm kiếm sản phẩm..."
+        />
+      </div>
     </header>
 
     <!-- Nội dung chính -->
@@ -44,52 +62,44 @@
         <!-- Form liên hệ -->
         <div class="contact-form-wrapper">
           <h2>Gửi yêu cầu tư vấn</h2>
-          <form action="#" method="POST" class="contact-form">
-            <!-- Nhóm: Họ và tên -->
+          <form id="order-form" class="contact-form">
+            <!-- Nhóm: Họ tên -->
             <div class="form-group">
-              <label for="fullname">Họ và tên (*):</label>
-              <input type="text" id="fullname" name="fullname" required />
+              <label for="customer-name">Họ tên khách hàng (*):</label>
+              <input
+                type="text"
+                id="customer-name"
+                placeholder="Tối thiểu 3 ký tự"
+              />
             </div>
 
-            <!-- Nhóm: Email -->
-            <div class="form-group">
-              <label for="email">Email (*):</label>
-              <input type="email" id="email" name="email" required />
-            </div>
-
-            <!-- Nhóm: Số điện thoại (dùng type="tel") -->
+            <!-- Nhóm: Điện thoại -->
             <div class="form-group">
               <label for="phone">Số điện thoại (*):</label>
-              <input type="tel" id="phone" name="phone" required />
+              <input type="text" id="phone" placeholder="Gồm 10 chữ số" />
             </div>
 
-            <!-- Nhóm: Sản phẩm quan tâm -->
+            <!-- Nhóm: Địa chỉ -->
             <div class="form-group">
-              <label for="product-interest">Sản phẩm quan tâm:</label>
-              <select id="product-interest" name="product-interest">
-                <option value="">-- Chọn sản phẩm --</option>
-                <option value="caphe">Cà phê Buôn Ma Thuột</option>
-                <option value="matong">Mật ong rừng</option>
-                <option value="macca">Mắc Ca Tây Nguyên</option>
-                <option value="tieu">Tiêu Đắk Nông</option>
-                <option value="bo">Bơ sáp Đắk Lắk</option>
-                <option value="khac">Khác</option>
-              </select>
+              <label for="address">Địa chỉ nhận hàng (*):</label>
+              <input
+                type="text"
+                id="address"
+                placeholder="Tối thiểu 10 ký tự"
+              />
             </div>
 
-            <!-- Nhóm: Nội dung liên hệ -->
+            <!-- Nhóm: Ghi chú -->
             <div class="form-group">
-              <label for="message">Nội dung liên hệ (*):</label>
+              <label for="note">Ghi chú đơn hàng:</label>
               <textarea
-                id="message"
-                name="message"
-                rows="5"
-                required
+                id="note"
+                rows="4"
+                placeholder="Giao giờ hành chính, gọi trước khi giao..."
               ></textarea>
             </div>
 
-            <!-- Nút gửi (dùng thẻ button theo yêu cầu) -->
-            <button type="submit" class="btn-submit">Gửi thông tin</button>
+            <button type="submit" class="btn-submit">Xác nhận đặt hàng</button>
           </form>
         </div>
 
@@ -113,5 +123,6 @@
       </div>
       <p class="copyright">Copyright &copy; by HTH</p>
     </footer>
+    <script src="../js/main.js"></script>
   </body>
 </html>
